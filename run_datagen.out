@@ -1,0 +1,17 @@
+nohup: ignoring input
+Mon Dec  1 07:58:58 PM CET 2025 [info] loop start; chunk dir=/scratch2/yangyu/workspace/Dataset/converted/chunks
+Mon Dec  1 07:58:58 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_000.json
+Mon Dec  1 07:58:58 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_000.json attempt 1 starting
+Mon Dec  1 07:58:58 PM CET 2025 [warn] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_000.json attempt 1 exited with code 0, retry in 5s
+Mon Dec  1 07:59:03 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_000.json attempt 2 starting
+Mon Dec  1 07:59:03 PM CET 2025 [warn] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_000.json attempt 2 exited with code 0, retry in 5s
+Mon Dec  1 07:59:08 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_000.json attempt 3 starting
+Mon Dec  1 07:59:08 PM CET 2025 [warn] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_000.json attempt 3 exited with code 0, retry in 5s
+Mon Dec  1 07:59:13 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_000.json attempt 4 starting
+Mon Dec  1 07:59:13 PM CET 2025 [warn] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_000.json attempt 4 exited with code 0, retry in 5s
+Mon Dec  1 07:59:18 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_000.json attempt 5 starting
+Mon Dec  1 07:59:18 PM CET 2025 [warn] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_000.json attempt 5 exited with code 0, retry in 5s
+Mon Dec  1 07:59:24 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_000.json attempt 6 starting
+Mon Dec  1 07:59:24 PM CET 2025 [warn] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_000.json attempt 6 exited with code 0, retry in 5s
+Mon Dec  1 07:59:29 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_000.json attempt 7 starting
+Mon Dec  1 07:59:29 PM CET 2025 [warn] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_000.json attempt 7 exited with code 0, retry in 5s

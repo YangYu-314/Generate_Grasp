@@ -1,0 +1,13 @@
+# Generated scenes and outputs
+configs/scene/
+outputs/
+cache/
+
+# Large data dumps
+**/*.npz
+**/*.png
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints/

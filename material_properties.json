@@ -1,0 +1,115 @@
+{
+    "Plastic": {
+        "friction": 0.45,
+        "sigma": 0.05
+    },
+    "Metal": {
+        "friction": 0.50,
+        "sigma": 0.05
+    },
+    "Ceramic": {
+        "friction": 0.40,
+        "sigma": 0.05
+    },
+    "Stainless Metal": {
+        "friction": 0.55,
+        "sigma": 0.05
+    },
+    "Glass": {
+        "friction": 0.275,
+        "sigma": 0.0375
+    },
+    "Stainless Steel": {
+        "friction": 0.55,
+        "sigma": 0.05
+    },
+    "Steel": {
+        "friction": 0.50,
+        "sigma": 0.05
+    },
+
+    "Water": {
+        "friction": 0.10,
+        "sigma": 0.025
+    },
+    "Plastic with foam padding": {
+        "friction": 0.50,
+        "sigma": 0.05
+    },
+    "Rubber": {
+        "friction": 0.825,
+        "sigma": 0.0875
+    },
+    "Fabric": {
+        "friction": 0.60,
+        "sigma": 0.05
+    },
+    "Soil": {
+        "friction": 0.70,
+        "sigma": 0.05
+    },
+    "Foam": {
+        "friction": 0.55,
+        "sigma": 0.05
+    },
+    "Foam and Leather": {
+        "friction": 0.60,
+        "sigma": 0.05
+    },
+    "Rubber and Copper": {
+        "friction": 0.75,
+        "sigma": 0.075
+    },
+    "Foam with leather cover": {
+        "friction": 0.60,
+        "sigma": 0.05
+    },
+    "Plastic and Foam": {
+        "friction": 0.50,
+        "sigma": 0.05
+    },
+    "Plastic/Fabric": {
+        "friction": 0.55,
+        "sigma": 0.05
+    },
+    "Foam with leather or fabric cover": {
+        "friction": 0.60,
+        "sigma": 0.05
+    },
+    "Silicone": {
+        "friction": 0.80,
+        "sigma": 0.075
+    },
+    "Aluminum": {
+        "friction": 0.45,
+        "sigma": 0.05
+    },
+    "Organic": {
+        "friction": 0.60,
+        "sigma": 0.05
+    },
+    "Foam with Leather Cover": {
+        "friction": 0.60,
+        "sigma": 0.05
+    },
+    "Foam and Leatherette": {
+        "friction": 0.60,
+        "sigma": 0.05
+    },
+    "Leather": {
+        "friction": 0.60,
+        "sigma": 0.05
+    },
+    "Organic Material": {
+        "friction": 0.60,
+        "sigma": 0.05
+    },
+    "Water or Soil": {
+        "friction": 0.40,
+        "sigma": 0.10
+    },
+    "Plastic and Metal": {
+        "friction": 0.50,
+        "sigma": 0.05
+    }
+}

@@ -1,0 +1,6 @@
+# Ignore dataset assets and outputs
+Dataset/
+outputs/
+
+Generator/configs
+GraspDataGen/datagen_sim_data
