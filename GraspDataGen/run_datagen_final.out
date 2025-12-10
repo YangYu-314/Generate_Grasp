@@ -1,0 +1,462 @@
+nohup: ignoring input
+Fri Dec  5 12:30:04 AM CET 2025 [info] loop start; chunk dir=/scratch2/yangyu/workspace/Dataset/converted/chunks
+Fri Dec  5 12:30:04 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_000.json
+Fri Dec  5 12:30:04 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_000.json attempt 1 starting
+Fri Dec  5 12:42:56 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_000.json attempt 1 completed successfully
+Fri Dec  5 12:42:56 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_001.json
+Fri Dec  5 12:42:56 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_001.json attempt 1 starting
+Fri Dec  5 12:58:56 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_001.json attempt 1 completed successfully
+Fri Dec  5 12:58:56 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_002.json
+Fri Dec  5 12:58:56 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_002.json attempt 1 starting
+Fri Dec  5 01:14:43 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_002.json attempt 1 completed successfully
+Fri Dec  5 01:14:43 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_003.json
+Fri Dec  5 01:14:43 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_003.json attempt 1 starting
+Fri Dec  5 01:31:25 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_003.json attempt 1 completed successfully
+Fri Dec  5 01:31:25 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_004.json
+Fri Dec  5 01:31:25 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_004.json attempt 1 starting
+Fri Dec  5 01:49:46 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_004.json attempt 1 completed successfully
+Fri Dec  5 01:49:46 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_005.json
+Fri Dec  5 01:49:46 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_005.json attempt 1 starting
+Fri Dec  5 02:15:48 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_005.json attempt 1 completed successfully
+Fri Dec  5 02:15:48 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_006.json
+Fri Dec  5 02:15:48 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_006.json attempt 1 starting
+Fri Dec  5 02:31:43 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_006.json attempt 1 completed successfully
+Fri Dec  5 02:31:43 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_007.json
+Fri Dec  5 02:31:43 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_007.json attempt 1 starting
+Fri Dec  5 02:47:46 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_007.json attempt 1 completed successfully
+Fri Dec  5 02:47:46 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_008.json
+Fri Dec  5 02:47:46 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_008.json attempt 1 starting
+Fri Dec  5 03:03:35 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_008.json attempt 1 completed successfully
+Fri Dec  5 03:03:35 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_009.json
+Fri Dec  5 03:03:35 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_009.json attempt 1 starting
+Fri Dec  5 03:19:36 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_009.json attempt 1 completed successfully
+Fri Dec  5 03:19:36 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_010.json
+Fri Dec  5 03:19:36 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_010.json attempt 1 starting
+Fri Dec  5 03:20:48 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_010.json attempt 1 completed successfully
+Fri Dec  5 03:20:48 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_011.json
+Fri Dec  5 03:20:48 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_011.json attempt 1 starting
+Fri Dec  5 03:34:26 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_011.json attempt 1 completed successfully
+Fri Dec  5 03:34:26 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_012.json
+Fri Dec  5 03:34:26 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_012.json attempt 1 starting
+Fri Dec  5 03:49:25 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_012.json attempt 1 completed successfully
+Fri Dec  5 03:49:25 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_013.json
+Fri Dec  5 03:49:25 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_013.json attempt 1 starting
+Fri Dec  5 04:05:14 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_013.json attempt 1 completed successfully
+Fri Dec  5 04:05:14 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_014.json
+Fri Dec  5 04:05:14 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_014.json attempt 1 starting
+Fri Dec  5 04:20:51 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_014.json attempt 1 completed successfully
+Fri Dec  5 04:20:51 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_015.json
+Fri Dec  5 04:20:51 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_015.json attempt 1 starting
+Fri Dec  5 04:36:34 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_015.json attempt 1 completed successfully
+Fri Dec  5 04:36:34 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_016.json
+Fri Dec  5 04:36:34 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_016.json attempt 1 starting
+Fri Dec  5 04:53:11 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_016.json attempt 1 completed successfully
+Fri Dec  5 04:53:11 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_017.json
+Fri Dec  5 04:53:11 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_017.json attempt 1 starting
+Fri Dec  5 05:08:43 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_017.json attempt 1 completed successfully
+Fri Dec  5 05:08:43 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_018.json
+Fri Dec  5 05:08:43 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_018.json attempt 1 starting
+Fri Dec  5 05:24:32 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_018.json attempt 1 completed successfully
+Fri Dec  5 05:24:32 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_019.json
+Fri Dec  5 05:24:32 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_019.json attempt 1 starting
+Fri Dec  5 05:39:10 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_019.json attempt 1 completed successfully
+Fri Dec  5 05:39:10 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_020.json
+Fri Dec  5 05:39:10 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_020.json attempt 1 starting
+Fri Dec  5 05:54:44 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_020.json attempt 1 completed successfully
+Fri Dec  5 05:54:44 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_021.json
+Fri Dec  5 05:54:44 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_021.json attempt 1 starting
+Fri Dec  5 06:10:50 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_021.json attempt 1 completed successfully
+Fri Dec  5 06:10:50 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_022.json
+Fri Dec  5 06:10:50 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_022.json attempt 1 starting
+Fri Dec  5 06:28:48 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_022.json attempt 1 completed successfully
+Fri Dec  5 06:28:48 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_023.json
+Fri Dec  5 06:28:48 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_023.json attempt 1 starting
+Fri Dec  5 06:43:39 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_023.json attempt 1 completed successfully
+Fri Dec  5 06:43:39 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_024.json
+Fri Dec  5 06:43:39 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_024.json attempt 1 starting
+Fri Dec  5 06:59:12 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_024.json attempt 1 completed successfully
+Fri Dec  5 06:59:12 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_025.json
+Fri Dec  5 06:59:12 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_025.json attempt 1 starting
+Fri Dec  5 07:14:34 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_025.json attempt 1 completed successfully
+Fri Dec  5 07:14:34 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_026.json
+Fri Dec  5 07:14:34 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_026.json attempt 1 starting
+Fri Dec  5 07:30:25 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_026.json attempt 1 completed successfully
+Fri Dec  5 07:30:25 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_027.json
+Fri Dec  5 07:30:25 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_027.json attempt 1 starting
+Fri Dec  5 07:46:01 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_027.json attempt 1 completed successfully
+Fri Dec  5 07:46:01 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_028.json
+Fri Dec  5 07:46:01 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_028.json attempt 1 starting
+Fri Dec  5 08:01:11 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_028.json attempt 1 completed successfully
+Fri Dec  5 08:01:11 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_029.json
+Fri Dec  5 08:01:11 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_029.json attempt 1 starting
+Fri Dec  5 08:16:52 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_029.json attempt 1 completed successfully
+Fri Dec  5 08:16:52 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_030.json
+Fri Dec  5 08:16:52 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_030.json attempt 1 starting
+Fri Dec  5 08:32:21 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_030.json attempt 1 completed successfully
+Fri Dec  5 08:32:21 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_031.json
+Fri Dec  5 08:32:21 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_031.json attempt 1 starting
+Fri Dec  5 08:48:15 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_031.json attempt 1 completed successfully
+Fri Dec  5 08:48:15 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_032.json
+Fri Dec  5 08:48:15 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_032.json attempt 1 starting
+Fri Dec  5 09:02:42 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_032.json attempt 1 completed successfully
+Fri Dec  5 09:02:42 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_033.json
+Fri Dec  5 09:02:42 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_033.json attempt 1 starting
+Fri Dec  5 09:17:51 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_033.json attempt 1 completed successfully
+Fri Dec  5 09:17:51 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_034.json
+Fri Dec  5 09:17:51 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_034.json attempt 1 starting
+Fri Dec  5 09:32:49 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_034.json attempt 1 completed successfully
+Fri Dec  5 09:32:49 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_035.json
+Fri Dec  5 09:32:49 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_035.json attempt 1 starting
+Fri Dec  5 09:48:14 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_035.json attempt 1 completed successfully
+Fri Dec  5 09:48:14 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_036.json
+Fri Dec  5 09:48:14 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_036.json attempt 1 starting
+Fri Dec  5 10:02:50 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_036.json attempt 1 completed successfully
+Fri Dec  5 10:02:50 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_037.json
+Fri Dec  5 10:02:50 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_037.json attempt 1 starting
+Fri Dec  5 10:18:05 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_037.json attempt 1 completed successfully
+Fri Dec  5 10:18:05 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_038.json
+Fri Dec  5 10:18:05 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_038.json attempt 1 starting
+Fri Dec  5 10:33:27 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_038.json attempt 1 completed successfully
+Fri Dec  5 10:33:27 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_039.json
+Fri Dec  5 10:33:27 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_039.json attempt 1 starting
+Fri Dec  5 10:49:12 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_039.json attempt 1 completed successfully
+Fri Dec  5 10:49:12 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_040.json
+Fri Dec  5 10:49:12 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_040.json attempt 1 starting
+Fri Dec  5 11:05:24 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_040.json attempt 1 completed successfully
+Fri Dec  5 11:05:24 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_041.json
+Fri Dec  5 11:05:24 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_041.json attempt 1 starting
+Fri Dec  5 11:24:13 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_041.json attempt 1 completed successfully
+Fri Dec  5 11:24:13 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_042.json
+Fri Dec  5 11:24:13 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_042.json attempt 1 starting
+Fri Dec  5 11:39:46 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_042.json attempt 1 completed successfully
+Fri Dec  5 11:39:46 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_043.json
+Fri Dec  5 11:39:46 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_043.json attempt 1 starting
+Fri Dec  5 11:55:03 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_043.json attempt 1 completed successfully
+Fri Dec  5 11:55:03 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_044.json
+Fri Dec  5 11:55:03 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_044.json attempt 1 starting
+Fri Dec  5 12:09:38 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_044.json attempt 1 completed successfully
+Fri Dec  5 12:09:38 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_045.json
+Fri Dec  5 12:09:38 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_045.json attempt 1 starting
+Fri Dec  5 12:25:11 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_045.json attempt 1 completed successfully
+Fri Dec  5 12:25:11 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_046.json
+Fri Dec  5 12:25:11 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_046.json attempt 1 starting
+Fri Dec  5 12:40:08 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_046.json attempt 1 completed successfully
+Fri Dec  5 12:40:08 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_047.json
+Fri Dec  5 12:40:08 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_047.json attempt 1 starting
+Fri Dec  5 12:55:30 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_047.json attempt 1 completed successfully
+Fri Dec  5 12:55:30 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_048.json
+Fri Dec  5 12:55:30 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_048.json attempt 1 starting
+Fri Dec  5 01:12:10 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_048.json attempt 1 completed successfully
+Fri Dec  5 01:12:10 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_049.json
+Fri Dec  5 01:12:10 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_049.json attempt 1 starting
+Fri Dec  5 01:32:46 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_049.json attempt 1 completed successfully
+Fri Dec  5 01:32:47 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_050.json
+Fri Dec  5 01:32:47 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_050.json attempt 1 starting
+Fri Dec  5 01:48:39 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_050.json attempt 1 completed successfully
+Fri Dec  5 01:48:39 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_051.json
+Fri Dec  5 01:48:39 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_051.json attempt 1 starting
+Fri Dec  5 02:04:45 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_051.json attempt 1 completed successfully
+Fri Dec  5 02:04:45 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_052.json
+Fri Dec  5 02:04:45 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_052.json attempt 1 starting
+Fri Dec  5 02:22:25 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_052.json attempt 1 completed successfully
+Fri Dec  5 02:22:25 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_053.json
+Fri Dec  5 02:22:25 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_053.json attempt 1 starting
+Fri Dec  5 02:38:35 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_053.json attempt 1 completed successfully
+Fri Dec  5 02:38:35 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_054.json
+Fri Dec  5 02:38:35 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_054.json attempt 1 starting
+Fri Dec  5 02:53:42 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_054.json attempt 1 completed successfully
+Fri Dec  5 02:53:43 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_055.json
+Fri Dec  5 02:53:43 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_055.json attempt 1 starting
+Fri Dec  5 03:09:17 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_055.json attempt 1 completed successfully
+Fri Dec  5 03:09:17 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_056.json
+Fri Dec  5 03:09:17 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_056.json attempt 1 starting
+Fri Dec  5 03:24:26 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_056.json attempt 1 completed successfully
+Fri Dec  5 03:24:26 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_057.json
+Fri Dec  5 03:24:26 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_057.json attempt 1 starting
+Fri Dec  5 03:40:01 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_057.json attempt 1 completed successfully
+Fri Dec  5 03:40:01 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_058.json
+Fri Dec  5 03:40:01 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_058.json attempt 1 starting
+Fri Dec  5 03:55:12 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_058.json attempt 1 completed successfully
+Fri Dec  5 03:55:12 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_059.json
+Fri Dec  5 03:55:12 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_059.json attempt 1 starting
+Fri Dec  5 04:10:14 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_059.json attempt 1 completed successfully
+Fri Dec  5 04:10:14 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_060.json
+Fri Dec  5 04:10:14 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_060.json attempt 1 starting
+Fri Dec  5 04:29:02 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_060.json attempt 1 completed successfully
+Fri Dec  5 04:29:02 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_061.json
+Fri Dec  5 04:29:02 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_061.json attempt 1 starting
+Fri Dec  5 04:41:31 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_061.json attempt 1 completed successfully
+Fri Dec  5 04:41:31 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_062.json
+Fri Dec  5 04:41:31 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_062.json attempt 1 starting
+Fri Dec  5 04:55:54 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_062.json attempt 1 completed successfully
+Fri Dec  5 04:55:54 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_063.json
+Fri Dec  5 04:55:54 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_063.json attempt 1 starting
+Fri Dec  5 05:11:24 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_063.json attempt 1 completed successfully
+Fri Dec  5 05:11:24 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_064.json
+Fri Dec  5 05:11:24 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_064.json attempt 1 starting
+Fri Dec  5 05:29:03 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_064.json attempt 1 completed successfully
+Fri Dec  5 05:29:03 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_065.json
+Fri Dec  5 05:29:03 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_065.json attempt 1 starting
+Fri Dec  5 05:46:02 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_065.json attempt 1 completed successfully
+Fri Dec  5 05:46:02 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_066.json
+Fri Dec  5 05:46:02 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_066.json attempt 1 starting
+Fri Dec  5 06:01:28 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_066.json attempt 1 completed successfully
+Fri Dec  5 06:01:28 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_067.json
+Fri Dec  5 06:01:28 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_067.json attempt 1 starting
+Fri Dec  5 06:16:01 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_067.json attempt 1 completed successfully
+Fri Dec  5 06:16:01 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_068.json
+Fri Dec  5 06:16:01 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_068.json attempt 1 starting
+Fri Dec  5 06:31:28 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_068.json attempt 1 completed successfully
+Fri Dec  5 06:31:28 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_069.json
+Fri Dec  5 06:31:28 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_069.json attempt 1 starting
+Fri Dec  5 06:46:08 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_069.json attempt 1 completed successfully
+Fri Dec  5 06:46:08 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_070.json
+Fri Dec  5 06:46:08 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_070.json attempt 1 starting
+Fri Dec  5 07:00:49 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_070.json attempt 1 completed successfully
+Fri Dec  5 07:00:49 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_071.json
+Fri Dec  5 07:00:49 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_071.json attempt 1 starting
+Fri Dec  5 07:16:07 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_071.json attempt 1 completed successfully
+Fri Dec  5 07:16:07 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_072.json
+Fri Dec  5 07:16:07 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_072.json attempt 1 starting
+Fri Dec  5 07:31:32 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_072.json attempt 1 completed successfully
+Fri Dec  5 07:31:32 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_073.json
+Fri Dec  5 07:31:32 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_073.json attempt 1 starting
+Fri Dec  5 07:47:18 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_073.json attempt 1 completed successfully
+Fri Dec  5 07:47:18 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_074.json
+Fri Dec  5 07:47:18 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_074.json attempt 1 starting
+Fri Dec  5 08:02:40 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_074.json attempt 1 completed successfully
+Fri Dec  5 08:02:40 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_075.json
+Fri Dec  5 08:02:40 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_075.json attempt 1 starting
+Fri Dec  5 08:18:20 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_075.json attempt 1 completed successfully
+Fri Dec  5 08:18:20 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_076.json
+Fri Dec  5 08:18:20 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_076.json attempt 1 starting
+Fri Dec  5 08:33:33 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_076.json attempt 1 completed successfully
+Fri Dec  5 08:33:33 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_077.json
+Fri Dec  5 08:33:33 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_077.json attempt 1 starting
+Fri Dec  5 08:48:32 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_077.json attempt 1 completed successfully
+Fri Dec  5 08:48:32 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_078.json
+Fri Dec  5 08:48:32 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_078.json attempt 1 starting
+Fri Dec  5 09:04:21 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_078.json attempt 1 completed successfully
+Fri Dec  5 09:04:21 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_079.json
+Fri Dec  5 09:04:21 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_079.json attempt 1 starting
+Fri Dec  5 09:20:53 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_079.json attempt 1 completed successfully
+Fri Dec  5 09:20:53 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_080.json
+Fri Dec  5 09:20:53 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_080.json attempt 1 starting
+Fri Dec  5 09:44:27 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_080.json attempt 1 completed successfully
+Fri Dec  5 09:44:27 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_081.json
+Fri Dec  5 09:44:27 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_081.json attempt 1 starting
+Fri Dec  5 10:00:41 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_081.json attempt 1 completed successfully
+Fri Dec  5 10:00:41 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_082.json
+Fri Dec  5 10:00:41 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_082.json attempt 1 starting
+Fri Dec  5 10:17:09 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_082.json attempt 1 completed successfully
+Fri Dec  5 10:17:09 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_083.json
+Fri Dec  5 10:17:09 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_083.json attempt 1 starting
+Fri Dec  5 10:31:31 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_083.json attempt 1 completed successfully
+Fri Dec  5 10:31:31 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_084.json
+Fri Dec  5 10:31:31 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_084.json attempt 1 starting
+Fri Dec  5 10:46:07 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_084.json attempt 1 completed successfully
+Fri Dec  5 10:46:07 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_085.json
+Fri Dec  5 10:46:07 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_085.json attempt 1 starting
+Fri Dec  5 11:01:40 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_085.json attempt 1 completed successfully
+Fri Dec  5 11:01:40 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_086.json
+Fri Dec  5 11:01:40 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_086.json attempt 1 starting
+Fri Dec  5 11:16:24 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_086.json attempt 1 completed successfully
+Fri Dec  5 11:16:24 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_087.json
+Fri Dec  5 11:16:25 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_087.json attempt 1 starting
+Fri Dec  5 11:33:04 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_087.json attempt 1 completed successfully
+Fri Dec  5 11:33:04 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_088.json
+Fri Dec  5 11:33:05 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_088.json attempt 1 starting
+Fri Dec  5 11:48:42 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_088.json attempt 1 completed successfully
+Fri Dec  5 11:48:42 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_089.json
+Fri Dec  5 11:48:42 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_089.json attempt 1 starting
+Sat Dec  6 12:04:38 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_089.json attempt 1 completed successfully
+Sat Dec  6 12:04:38 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_090.json
+Sat Dec  6 12:04:39 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_090.json attempt 1 starting
+Sat Dec  6 12:20:50 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_090.json attempt 1 completed successfully
+Sat Dec  6 12:20:51 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_091.json
+Sat Dec  6 12:20:51 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_091.json attempt 1 starting
+Sat Dec  6 12:35:36 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_091.json attempt 1 completed successfully
+Sat Dec  6 12:35:36 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_092.json
+Sat Dec  6 12:35:36 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_092.json attempt 1 starting
+Sat Dec  6 12:50:01 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_092.json attempt 1 completed successfully
+Sat Dec  6 12:50:01 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_093.json
+Sat Dec  6 12:50:01 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_093.json attempt 1 starting
+Sat Dec  6 01:06:00 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_093.json attempt 1 completed successfully
+Sat Dec  6 01:06:00 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_094.json
+Sat Dec  6 01:06:00 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_094.json attempt 1 starting
+Sat Dec  6 01:24:00 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_094.json attempt 1 completed successfully
+Sat Dec  6 01:24:00 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_095.json
+Sat Dec  6 01:24:01 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_095.json attempt 1 starting
+Sat Dec  6 01:42:16 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_095.json attempt 1 completed successfully
+Sat Dec  6 01:42:16 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_096.json
+Sat Dec  6 01:42:16 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_096.json attempt 1 starting
+Sat Dec  6 01:58:14 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_096.json attempt 1 completed successfully
+Sat Dec  6 01:58:14 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_097.json
+Sat Dec  6 01:58:14 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_097.json attempt 1 starting
+Sat Dec  6 02:14:24 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_097.json attempt 1 completed successfully
+Sat Dec  6 02:14:24 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_098.json
+Sat Dec  6 02:14:24 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_098.json attempt 1 starting
+Sat Dec  6 02:29:32 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_098.json attempt 1 completed successfully
+Sat Dec  6 02:29:32 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_099.json
+Sat Dec  6 02:29:32 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_099.json attempt 1 starting
+Sat Dec  6 02:44:58 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_099.json attempt 1 completed successfully
+Sat Dec  6 02:44:58 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_100.json
+Sat Dec  6 02:44:58 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_100.json attempt 1 starting
+Sat Dec  6 02:51:07 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_100.json attempt 1 completed successfully
+Sat Dec  6 02:51:07 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_101.json
+Sat Dec  6 02:51:07 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_101.json attempt 1 starting
+Sat Dec  6 03:05:15 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_101.json attempt 1 completed successfully
+Sat Dec  6 03:05:15 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_102.json
+Sat Dec  6 03:05:16 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_102.json attempt 1 starting
+Sat Dec  6 03:20:41 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_102.json attempt 1 completed successfully
+Sat Dec  6 03:20:41 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_103.json
+Sat Dec  6 03:20:41 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_103.json attempt 1 starting
+Sat Dec  6 03:35:39 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_103.json attempt 1 completed successfully
+Sat Dec  6 03:35:39 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_104.json
+Sat Dec  6 03:35:39 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_104.json attempt 1 starting
+Sat Dec  6 03:52:09 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_104.json attempt 1 completed successfully
+Sat Dec  6 03:52:09 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_105.json
+Sat Dec  6 03:52:09 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_105.json attempt 1 starting
+Sat Dec  6 04:07:30 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_105.json attempt 1 completed successfully
+Sat Dec  6 04:07:30 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_106.json
+Sat Dec  6 04:07:30 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_106.json attempt 1 starting
+Sat Dec  6 04:22:39 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_106.json attempt 1 completed successfully
+Sat Dec  6 04:22:39 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_107.json
+Sat Dec  6 04:22:39 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_107.json attempt 1 starting
+Sat Dec  6 04:37:58 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_107.json attempt 1 completed successfully
+Sat Dec  6 04:37:58 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_108.json
+Sat Dec  6 04:37:58 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_108.json attempt 1 starting
+Sat Dec  6 04:52:21 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_108.json attempt 1 completed successfully
+Sat Dec  6 04:52:21 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_109.json
+Sat Dec  6 04:52:21 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_109.json attempt 1 starting
+Sat Dec  6 05:06:29 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_109.json attempt 1 completed successfully
+Sat Dec  6 05:06:29 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_110.json
+Sat Dec  6 05:06:29 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_110.json attempt 1 starting
+Sat Dec  6 05:20:03 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_110.json attempt 1 completed successfully
+Sat Dec  6 05:20:03 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_111.json
+Sat Dec  6 05:20:03 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_111.json attempt 1 starting
+Sat Dec  6 05:34:22 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_111.json attempt 1 completed successfully
+Sat Dec  6 05:34:22 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_112.json
+Sat Dec  6 05:34:22 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_112.json attempt 1 starting
+Sat Dec  6 05:49:48 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_112.json attempt 1 completed successfully
+Sat Dec  6 05:49:48 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_113.json
+Sat Dec  6 05:49:48 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_113.json attempt 1 starting
+Sat Dec  6 06:05:23 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_113.json attempt 1 completed successfully
+Sat Dec  6 06:05:23 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_114.json
+Sat Dec  6 06:05:23 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_114.json attempt 1 starting
+Sat Dec  6 06:21:30 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_114.json attempt 1 completed successfully
+Sat Dec  6 06:21:30 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_115.json
+Sat Dec  6 06:21:30 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_115.json attempt 1 starting
+Sat Dec  6 06:38:22 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_115.json attempt 1 completed successfully
+Sat Dec  6 06:38:22 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_116.json
+Sat Dec  6 06:38:22 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_116.json attempt 1 starting
+Sat Dec  6 06:52:41 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_116.json attempt 1 completed successfully
+Sat Dec  6 06:52:41 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_117.json
+Sat Dec  6 06:52:41 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_117.json attempt 1 starting
+Sat Dec  6 07:07:06 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_117.json attempt 1 completed successfully
+Sat Dec  6 07:07:06 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_118.json
+Sat Dec  6 07:07:06 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_118.json attempt 1 starting
+Sat Dec  6 07:21:59 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_118.json attempt 1 completed successfully
+Sat Dec  6 07:21:59 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_119.json
+Sat Dec  6 07:21:59 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_119.json attempt 1 starting
+Sat Dec  6 07:35:41 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_119.json attempt 1 completed successfully
+Sat Dec  6 07:35:41 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_120.json
+Sat Dec  6 07:35:41 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_120.json attempt 1 starting
+Sat Dec  6 07:50:47 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_120.json attempt 1 completed successfully
+Sat Dec  6 07:50:47 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_121.json
+Sat Dec  6 07:50:47 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_121.json attempt 1 starting
+Sat Dec  6 08:06:50 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_121.json attempt 1 completed successfully
+Sat Dec  6 08:06:50 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_122.json
+Sat Dec  6 08:06:50 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_122.json attempt 1 starting
+Sat Dec  6 08:21:48 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_122.json attempt 1 completed successfully
+Sat Dec  6 08:21:48 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_123.json
+Sat Dec  6 08:21:48 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_123.json attempt 1 starting
+Sat Dec  6 08:37:49 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_123.json attempt 1 completed successfully
+Sat Dec  6 08:37:49 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_124.json
+Sat Dec  6 08:37:49 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_124.json attempt 1 starting
+Sat Dec  6 08:53:33 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_124.json attempt 1 completed successfully
+Sat Dec  6 08:53:33 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_125.json
+Sat Dec  6 08:53:33 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_125.json attempt 1 starting
+Sat Dec  6 09:08:51 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_125.json attempt 1 completed successfully
+Sat Dec  6 09:08:51 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_126.json
+Sat Dec  6 09:08:51 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_126.json attempt 1 starting
+Sat Dec  6 09:23:00 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_126.json attempt 1 completed successfully
+Sat Dec  6 09:23:00 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_127.json
+Sat Dec  6 09:23:00 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_127.json attempt 1 starting
+Sat Dec  6 09:37:53 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_127.json attempt 1 completed successfully
+Sat Dec  6 09:37:53 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_128.json
+Sat Dec  6 09:37:53 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_128.json attempt 1 starting
+Sat Dec  6 09:52:44 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_128.json attempt 1 completed successfully
+Sat Dec  6 09:52:44 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_129.json
+Sat Dec  6 09:52:44 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_129.json attempt 1 starting
+Sat Dec  6 10:08:21 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_129.json attempt 1 completed successfully
+Sat Dec  6 10:08:21 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_130.json
+Sat Dec  6 10:08:21 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_130.json attempt 1 starting
+Sat Dec  6 10:23:15 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_130.json attempt 1 completed successfully
+Sat Dec  6 10:23:15 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_131.json
+Sat Dec  6 10:23:15 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_131.json attempt 1 starting
+Sat Dec  6 10:38:31 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_131.json attempt 1 completed successfully
+Sat Dec  6 10:38:31 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_132.json
+Sat Dec  6 10:38:31 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_132.json attempt 1 starting
+Sat Dec  6 10:54:24 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_132.json attempt 1 completed successfully
+Sat Dec  6 10:54:24 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_133.json
+Sat Dec  6 10:54:24 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_133.json attempt 1 starting
+Sat Dec  6 11:14:10 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_133.json attempt 1 completed successfully
+Sat Dec  6 11:14:10 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_134.json
+Sat Dec  6 11:14:10 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_134.json attempt 1 starting
+Sat Dec  6 11:29:54 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_134.json attempt 1 completed successfully
+Sat Dec  6 11:29:54 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_135.json
+Sat Dec  6 11:29:54 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_135.json attempt 1 starting
+Sat Dec  6 11:44:52 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_135.json attempt 1 completed successfully
+Sat Dec  6 11:44:52 AM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_136.json
+Sat Dec  6 11:44:52 AM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_136.json attempt 1 starting
+Sat Dec  6 12:00:44 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_136.json attempt 1 completed successfully
+Sat Dec  6 12:00:44 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_137.json
+Sat Dec  6 12:00:44 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_137.json attempt 1 starting
+Sat Dec  6 12:15:41 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_137.json attempt 1 completed successfully
+Sat Dec  6 12:15:41 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_138.json
+Sat Dec  6 12:15:41 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_138.json attempt 1 starting
+Sat Dec  6 12:31:06 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_138.json attempt 1 completed successfully
+Sat Dec  6 12:31:06 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_139.json
+Sat Dec  6 12:31:06 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_139.json attempt 1 starting
+Sat Dec  6 12:46:50 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_139.json attempt 1 completed successfully
+Sat Dec  6 12:46:50 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_140.json
+Sat Dec  6 12:46:50 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_140.json attempt 1 starting
+Sat Dec  6 01:02:37 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_140.json attempt 1 completed successfully
+Sat Dec  6 01:02:37 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_141.json
+Sat Dec  6 01:02:37 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_141.json attempt 1 starting
+Sat Dec  6 01:18:21 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_141.json attempt 1 completed successfully
+Sat Dec  6 01:18:21 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_142.json
+Sat Dec  6 01:18:21 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_142.json attempt 1 starting
+Sat Dec  6 01:33:52 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_142.json attempt 1 completed successfully
+Sat Dec  6 01:33:52 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_143.json
+Sat Dec  6 01:33:52 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_143.json attempt 1 starting
+Sat Dec  6 01:49:25 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_143.json attempt 1 completed successfully
+Sat Dec  6 01:49:25 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_144.json
+Sat Dec  6 01:49:25 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_144.json attempt 1 starting
+Sat Dec  6 02:04:15 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_144.json attempt 1 completed successfully
+Sat Dec  6 02:04:15 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_145.json
+Sat Dec  6 02:04:15 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_145.json attempt 1 starting
+Sat Dec  6 02:16:41 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_145.json attempt 1 completed successfully
+Sat Dec  6 02:16:41 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_146.json
+Sat Dec  6 02:16:41 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_146.json attempt 1 starting
+Sat Dec  6 02:32:36 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_146.json attempt 1 completed successfully
+Sat Dec  6 02:32:36 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_147.json
+Sat Dec  6 02:32:36 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_147.json attempt 1 starting
+Sat Dec  6 02:48:56 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_147.json attempt 1 completed successfully
+Sat Dec  6 02:48:56 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_148.json
+Sat Dec  6 02:48:56 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_148.json attempt 1 starting
+Sat Dec  6 03:04:17 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_148.json attempt 1 completed successfully
+Sat Dec  6 03:04:17 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_149.json
+Sat Dec  6 03:04:17 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_149.json attempt 1 starting
+Sat Dec  6 03:19:58 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_149.json attempt 1 completed successfully
+Sat Dec  6 03:19:58 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_150.json
+Sat Dec  6 03:19:58 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_150.json attempt 1 starting
+Sat Dec  6 03:36:01 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_150.json attempt 1 completed successfully
+Sat Dec  6 03:36:01 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_151.json
+Sat Dec  6 03:36:01 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_151.json attempt 1 starting
+Sat Dec  6 03:51:26 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_151.json attempt 1 completed successfully
+Sat Dec  6 03:51:26 PM CET 2025 [info] starting chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_152.json
+Sat Dec  6 03:51:26 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_152.json attempt 1 starting
+Sat Dec  6 03:52:52 PM CET 2025 [info] chunk /scratch2/yangyu/workspace/Dataset/converted/chunks/chunk_152.json attempt 1 completed successfully
+Sat Dec  6 03:52:52 PM CET 2025 [info] all chunks done
