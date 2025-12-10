@@ -2,6 +2,7 @@
 Dataset/
 outputs/
 copy/
+logs/
 
 Generator/configs
 GraspDataGen/datagen_sim_data

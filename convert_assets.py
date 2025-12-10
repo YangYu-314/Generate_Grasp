@@ -24,7 +24,8 @@ import trimesh
 
 
 ROOT_DIR = Path(__file__).resolve().parent
-DATASET_ROOT = ROOT_DIR / "Dataset"
+DATASET_ROOT = Path("/datasets")
+_DEFAULT_DATASET_ROOT = DATASET_ROOT
 JSON_PATH = DATASET_ROOT / "json"
 MESH_PATH = DATASET_ROOT / "mesh"
 OUTPUT_OBJ = DATASET_ROOT / "converted" / "obj"
@@ -37,6 +38,30 @@ SCALE_RELAXATION = 0.95  # shrink slightly to avoid too tight fitting
 SCALE_ALIGNMENT_SPREAD = 1.2
 _SIM_APP = None
 _MATERIAL_PROPS: Dict[str, Dict[str, float]] | None = None
+
+
+def _normalize_path(path_value: Path | None) -> Path | None:
+    """Expand user home in incoming paths while tolerating None."""
+    if path_value is None:
+        return None
+    return path_value.expanduser()
+
+
+def configure_paths(dataset_root: Path | None = None, output_root: Path | None = None) -> None:
+    """Update global IO paths using provided overrides or defaults."""
+    global DATASET_ROOT, JSON_PATH, MESH_PATH, OUTPUT_OBJ, OUTPUT_USD, MATERIAL_DIR
+
+    root = _normalize_path(dataset_root) or _DEFAULT_DATASET_ROOT
+    DATASET_ROOT = root
+    JSON_PATH = DATASET_ROOT / "json"
+    MESH_PATH = DATASET_ROOT / "mesh"
+    MATERIAL_DIR = DATASET_ROOT / "material"
+
+    out_root = _normalize_path(output_root)
+    if out_root is None:
+        out_root = DATASET_ROOT / "converted"
+    OUTPUT_OBJ = out_root / "obj"
+    OUTPUT_USD = out_root / "usd"
 
 # Material lookup copied from Generator/utils/loader.py for consistency
 ISAAC_MATERIALS_MDL = {
@@ -524,11 +549,19 @@ def parse_args() -> argparse.Namespace:
         default="convexDecomposition",
         help="Collision approximation per part (use convexDecomposition for concave shapes).",
     )
+    parser.add_argument("--root", type=Path, default=None, help="Dataset root directory (default: /datasets).")
+    parser.add_argument(
+        "--output",
+        type=Path,
+        default=None,
+        help="Output root directory (default: <root>/converted).",
+    )
     return parser.parse_args()
 
 
 def main() -> None:
     args = parse_args()
+    configure_paths(dataset_root=args.root, output_root=args.output)
     OUTPUT_OBJ.mkdir(parents=True, exist_ok=True)
     OUTPUT_USD.mkdir(parents=True, exist_ok=True)
 
