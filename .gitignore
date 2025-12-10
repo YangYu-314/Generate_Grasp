@@ -4,5 +4,6 @@ outputs/
 
 Generator/configs
 GraspDataGen/datagen_sim_data
+data.tar
 
 .tar
