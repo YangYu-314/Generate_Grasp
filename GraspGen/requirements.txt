@@ -1,3 +1,4 @@
+pickle5
 h5py
 hydra-core
 matplotlib
