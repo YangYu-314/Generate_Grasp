@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
 Stitches OBJs with correct scaling, maps Lidar points to parts via KD-Tree,
-and appends physics properties (density, friction).
+and appends physics properties (density, friction, variance).
 
-Output: (N, 5) numpy array -> [x, y, z, density, friction]
+Output: (N, 6) numpy array -> [x, y, z, density, friction, variance]
 """
 
 import argparse
@@ -21,10 +21,10 @@ import matplotlib.pyplot as plt  # noqa: E402
 
 # ================= Configuration =================
 # Adjust these paths to match your cluster environment
-DATASET_ROOT = Path("/scratch2/yangyu/workspace/Dataset")
+DATASET_ROOT = Path("/cluster/scratch/yangyu1/datasets")
 JSON_PATH = DATASET_ROOT / "json"
 MESH_PATH = DATASET_ROOT / "mesh"
-MATERIAL_PROPS_PATH = Path("/scratch2/yangyu/workspace/material_properties.json")
+MATERIAL_PROPS_PATH = Path("/cluster/home/yangyu1/Isaac/Generate_Grasp/material_properties.json")
 # Input lidar file name (assumed to be inside some directory, logic handles path)
 # Output directory
 
@@ -45,16 +45,17 @@ def load_material_properties() -> Dict[str, Dict[str, float]]:
             _MATERIAL_PROPS = {}
     return _MATERIAL_PROPS
 
-def get_material_friction(material_name: str, default_friction: float = 0.5) -> float:
+def get_material_friction(material_name: str, default_friction: float = 0.5, default_sigma: float = 0.0) -> Tuple[float, float]:
     props = load_material_properties()
     entry = props.get(material_name, {})
     friction = entry.get("friction")
+    sigma = entry.get("sigma")
     if friction is None:
-        return default_friction
+        return default_friction, default_sigma
     try:
-        return float(friction)
+        return float(friction), float(sigma)
     except Exception:
-        return default_friction
+        return default_friction, default_sigma
 
 def parse_density(value: object, default_density: float = 1000.0) -> float:
     if value is None: return default_density
@@ -121,7 +122,7 @@ def align_dimension_to_size(dimension: np.ndarray, size: np.ndarray) -> Tuple[np
         perm_dim = dim[list(perm)]
         perm_scale = np.where(size > 1e-9, perm_dim / size, 1.0)
         log_scale = np.log(np.clip(perm_scale, 1e-9, 1e9))
-        score = log_scale.ptp()
+        score = np.ptp(log_scale)
         if score < best_score:
             best_score = score
             best_perm = perm
@@ -153,6 +154,7 @@ class GeometryPhysicsMapper:
         # lookup tables: index -> value
         self.density_lookup = []
         self.friction_lookup = []
+        self.friction_var_lookup = []
         self.max_neighbor_dist = np.inf
         
         self._build_index()
@@ -204,13 +206,14 @@ class GeometryPhysicsMapper:
             # Parse Physics
             mat_name = p_meta.get("material", "Plastic")
             print(f"Part {label}: Material={mat_name}")
-            friction = get_material_friction(mat_name)
+            friction, sigma = get_material_friction(mat_name)
             density = parse_density(p_meta.get("density"))
-            print(f"  -> Density={density:.3g} kg/m^3, Friction={friction:.3g}")
+            print(f"  -> Density={density:.3g} kg/m^3, Friction={friction:.3g}, Variance={sigma:.3g}")
             
             # Append to lookups
             # Note: 'i' is the index in our lookup tables
             self.friction_lookup.append(friction)
+            self.friction_var_lookup.append(sigma)
             self.density_lookup.append(density)
             
             all_points.append(points)
@@ -248,10 +251,10 @@ class GeometryPhysicsMapper:
         # Query Tree (Batch)
         # k=1, jobs=-1 (use all cores)
         # distance_upper_bound: points too far from mesh get default
-        dists, hits = self.tree.query(points, k=1, workers=-1, distance_upper_bound=self.max_neighbor_dist)
-        
-        # Prepare result array: [x, y, z, density, friction]
-        result = np.zeros((len(points), 5), dtype=np.float32)
+        dists, hits = self.tree.query(points, k=1, workers=1, distance_upper_bound=self.max_neighbor_dist)
+         
+        # Prepare result array: [x, y, z, density, friction, variance]
+        result = np.zeros((len(points), 6), dtype=np.float32)
         result[:, :3] = points
         
         # Handle hits
@@ -265,9 +268,11 @@ class GeometryPhysicsMapper:
             # Map part list index -> physics properties
             densities = np.array(self.density_lookup)[part_idxs]
             frictions = np.array(self.friction_lookup)[part_idxs]
+            variance = np.array(self.friction_var_lookup)[part_idxs]
             
             result[valid_mask, 3] = densities
             result[valid_mask, 4] = frictions
+            result[valid_mask, 5] = variance
             
         # Handle outliers (optional: set to 0 or mean)
         # Current logic leaves them as 0.0
@@ -319,6 +324,7 @@ def process_object(object_id: str, lidar_file: Path, output_dir: Path):
         pts = labeled_data[:, :3]
         dens = labeled_data[:, 3]
         fric = labeled_data[:, 4]
+        var = labeled_data[:, 5]
         _save_class_plot(pts, fric, "Friction classes", output_dir / f"{object_id}_friction.png")
         _save_class_plot(pts, dens, "Density classes", output_dir / f"{object_id}_density.png")
 

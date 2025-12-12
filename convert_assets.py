@@ -489,7 +489,10 @@ def write_usd_from_parts(
         mat_api.CreateStaticFrictionAttr(part_friction)
         mat_api.CreateDynamicFrictionAttr(part_friction)
         mat_api.CreateDensityAttr(part_density)
-        UsdShade.MaterialBindingAPI.Apply(mesh_prim_prim).Bind(phys_mat, UsdShade.Tokens.weakerThanDescendants)
+        UsdShade.MaterialBindingAPI.Apply(mesh_prim_prim).Bind(
+            phys_mat, 
+            bindingStrength=UsdShade.Tokens.weakerThanDescendants,
+            materialPurpose="physics")
 
         mesh_prim.GetPrim().CreateAttribute("customData:part_id", Sdf.ValueTypeNames.Int).Set(int(label))
         mesh_prim.GetPrim().CreateAttribute("customData:part_material", Sdf.ValueTypeNames.String).Set(material_name)

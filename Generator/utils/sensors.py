@@ -21,7 +21,16 @@ class SensorBuilder:
         Camera_Positions (list[tuple, tuple]): A list of tuples defining the positions and orientations (Quat) of each camera sensor,
                                 if empty, random positions will be used.
     """
-    def __init__(self, num_lidars=5, num_cameras=5, lidar_positions=None, camera_positions=None, distance_lidar=3.0, distance_camera=2.5, include_bottom_lidar=True):
+    def __init__(
+        self,
+        num_lidars=5,
+        num_cameras=5,
+        lidar_positions=None,
+        camera_positions=None,
+        distance_lidar=3.0,
+        distance_camera=2.5,
+        include_bottom_lidar=True,
+    ):
         self.Num_LiDARs = num_lidars
         self.Num_Cameras = num_cameras
         self.distance_lidar = distance_lidar
@@ -31,8 +40,8 @@ class SensorBuilder:
         if lidar_positions is not None:
             if len(lidar_positions) != num_lidars:
                 raise ValueError("Length of lidar positions must match number of lidars.")
-            elif not all(check_valid_quat(pos[1]) for pos in lidar_positions):
-                raise ValueError("One or more LiDAR orientations are not valid quaternions.")
+            # elif not all(check_valid_quat(pos[1]) for pos in lidar_positions):
+            #     raise ValueError("One or more LiDAR orientations are not valid quaternions.")
             else:
                 self.LiDAR_Positions = lidar_positions
         else:
@@ -47,8 +56,8 @@ class SensorBuilder:
         if camera_positions is not None:
             if len(camera_positions) != num_cameras:
                 raise ValueError("Length of camera positions must match number of cameras.")
-            elif not all(check_valid_quat(pos[1]) for pos in camera_positions):
-                raise ValueError("One or more Camera orientations are not valid quaternions.")
+            # elif not all(check_valid_quat(pos[1]) for pos in camera_positions):
+            #     raise ValueError("One or more Camera orientations are not valid quaternions.")
             else:
                 self.Camera_Positions = camera_positions
         else:

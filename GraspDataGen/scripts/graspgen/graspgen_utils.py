@@ -303,9 +303,32 @@ class LabStarter:
         """
         if not self._initialized:
             try:
-                from isaaclab.app import AppLauncher
-                app_launcher = AppLauncher(headless=self.headless)
-                self.simulation_app = app_launcher.app
+                # import os
+                # hpc_cache = os.environ.get("APPTAINERENV_HPC_CACHE_ROOT")
+                
+                # if hpc_cache:
+                #     print(f"\n[HPC PATCH] Reload Env path: {hpc_cache}")
+                    
+                #     os.environ["HOME"] = hpc_cache
+                    
+                #     os.environ["OMNI_USER_DATA_DIR"] = os.path.join(hpc_cache, "data")
+                #     os.environ["OMNI_CACHE_DIR"]     = os.path.join(hpc_cache, "cache")
+                #     os.environ["OMNI_LOGS_DIR"]      = os.path.join(hpc_cache, "logs")
+                #     os.environ["OMNI_SERVER_DATA_DIR"] = os.path.join(hpc_cache, "server")
+                #     os.environ["EXP_PATH"]           = hpc_cache
+                    
+                #     os.environ["PIP_CACHE_DIR"] = os.path.join(hpc_cache, "pip_cache")
+                    
+                #     for k in ["OMNI_USER_DATA_DIR", "OMNI_CACHE_DIR", "PIP_CACHE_DIR"]:
+                #         path = os.environ[k]
+                #         if not os.path.exists(path):
+                #             os.makedirs(path, exist_ok=True)
+                
+                # from isaaclab.app import AppLauncher
+                # app_launcher = AppLauncher(headless=self.headless)
+                # self.simulation_app = app_launcher.app
+                from isaacsim import SimulationApp
+                self.simulation_app = SimulationApp({"headless": True})
                 self._initialized = True
                 
                 # Handle debugger attachment if requested (after app is created)

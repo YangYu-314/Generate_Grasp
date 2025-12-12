@@ -23,7 +23,7 @@ from gripper_configurations import get_gripper_config, apply_gripper_config_to_a
 import json
 import os
 import time
-from graspgen_utils import print_blue, print_purple, grasp_data_exists, add_arg_to_group
+from graspgen_utils import print_blue, print_purple, print_red, grasp_data_exists, add_arg_to_group
 
 default_object_scales_json = 'objects/datagen_example.json'
 default_object_root = os.environ.get('OBJECT_DATASET_DIR', 'objects')
@@ -105,6 +105,11 @@ def datagen_main(args):
 
         object = GuessObject.from_file(full_object_path, scale, args=args)
         grasp_guess_buffer = guess_generator.generate_grasps(object, args.num_grasps, 0)
+        
+        if grasp_guess_buffer.succ_buff is None or grasp_guess_buffer.num_successes == 0:
+            print_red(f"Failed to generate any grasp guesses for {full_object_path}; skipping.")
+            continue
+
         if guess_save_to_folder:
             _, _ = grasp_guess_buffer.create_isaac_grasp_data(save_successes=True, save_to_folder=guess_save_to_folder, 
                                                               file_name_prefix=file_name_prefix, file_extension_prefix=file_extension_prefix)

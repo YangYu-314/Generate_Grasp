@@ -17,12 +17,39 @@ REPO_ROOT = THIS_DIR.parent
 if str(REPO_ROOT) not in sys.path:
     sys.path.append(str(REPO_ROOT))
 
-from isaacsim import SimulationApp
+# from isaacsim import SimulationApp
 
-# Launch Isaac Sim in headless mode for batch dataset generation
-simulation_app = SimulationApp({"headless": True,
-                                "extra_args": ["--/rtx-transient/stableIds/enabled=true",],
-                                })
+# config = {
+#     "headless": True,
+#     "isaac/asset_root/default": "/isaacsim_assets/Assets/Isaac/5.1",
+#     "isaac/asset_root/nvidia": "/isaacsim_assets/Assets/Isaac/5.1", 
+# }
+
+# # Launch Isaac Sim in headless mode for batch dataset generation
+# simulation_app = SimulationApp(config)
+
+from isaacsim import SimulationApp
+import carb
+
+# 1) 正常启动 Isaac Sim（不要在这里传 asset_root）
+simulation_app = SimulationApp({"headless": True, "renderer": "RayTracedLighting",})
+
+# 2) 用正确的 setting 名称覆盖资产根目录（容器内路径）
+LOCAL_ASSET_ROOT = "/isaacsim_assets/Assets/Isaac/5.1"
+
+simulation_app.set_setting(
+    "/persistent/isaac/asset_root/default",
+    LOCAL_ASSET_ROOT,
+)
+simulation_app.set_setting(
+    "/persistent/isaac/asset_root/nvidia",
+    LOCAL_ASSET_ROOT,
+)
+
+# 3) 打印确认真的写进去了（这里读设置，不调用 get_assets_root_path，避免立刻抛错）
+settings = carb.settings.get_settings()
+print("[DEBUG] default setting   =", settings.get("/persistent/isaac/asset_root/default"))
+print("[DEBUG] nvidia  setting   =", settings.get("/persistent/isaac/asset_root/nvidia"))
 
 # Use non-interactive backend for headless export
 matplotlib.use("Agg")
@@ -35,6 +62,7 @@ from isaacsim.sensors.rtx import LidarRtx  # noqa: E402
 from pxr import Sdf, UsdGeom, UsdPhysics, UsdShade, PhysxSchema  # noqa: E402
 
 from Generator.utils.sensors import SensorBuilder  # noqa: E402
+from Generator.utils.utils import quat_from_euler  # noqa: E402
 
 
 MATERIAL_PROPS_PATH = Path(__file__).resolve().parent.parent / "material_properties.json"
@@ -68,6 +96,18 @@ def load_ids_from_chunk(chunk_path: Path) -> List[int]:
         if name.isdigit():
             ids.append(int(name))
     return sorted(set(ids))
+
+
+def build_fixed_lidar_positions(distance: float):
+    """Create a fixed six-direction LiDAR layout at a constant radius."""
+    return {
+        "lidar_front": ((distance, 0.0, 0.0), quat_from_euler(180.0, 0.0, 0.0)),
+        "lidar_back": ((-distance, 0.0, 0.0), quat_from_euler(0.0, 0.0, 0.0)),
+        "lidar_left": ((0.0, distance, 0.0), quat_from_euler(90.0, 0.0, 0.0)),
+        "lidar_right": ((0.0, -distance, 0.0), quat_from_euler(-90.0, 0.0, 0.0)),
+        "lidar_up": ((0.0, 0.0, distance), quat_from_euler(0.0, 90.0, 0.0)),
+        "lidar_down": ((0.0, 0.0, -distance), quat_from_euler(0.0, -90.0, 0.0)),
+    }
 
 
 def reset_stage(stage) -> None:
@@ -315,10 +355,13 @@ def process_usd_file(
     # Debug: print per-mesh material bindings and physics properties.
     # _ = build_material_cache(stage, material_props)
 
+    # fixed_lidar_positions = build_fixed_lidar_positions(args.lidar_distance)
+
     sensor_builder = SensorBuilder(
+        # num_lidars=len(fixed_lidar_positions),
         num_lidars=args.lidars,
         num_cameras=args.cameras,
-        lidar_positions=None,
+        # lidar_positions=fixed_lidar_positions,
         camera_positions=None,
         distance_lidar=args.lidar_distance,
         distance_camera=args.camera_distance,
@@ -364,7 +407,12 @@ def gather_usd_files(root: Path, ids: List[int] | None = None) -> List[Path]:
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Generate LiDAR datasets (xyz, xyz+intensity) for USD assets.")
-    parser.add_argument("--usd", required=True, type=Path, help="Path to a single USD file.")
+    group = parser.add_mutually_exclusive_group(required=True)
+    group.add_argument("--usd", type=Path, help="Path to a single USD file (Single mode).")
+    group.add_argument("--root", type=Path, help="Dataset root directory containing a 'usd' folder (Batch mode).")
+
+    parser.add_argument("--ids", type=str, nargs="+", help="List of object IDs to process (Batch mode only).")    
+    
     parser.add_argument(
         "--output-dir",
         type=Path,
@@ -373,8 +421,8 @@ def parse_args():
     )
     parser.add_argument("--frames", type=int, default=50, help="Number of frames to accumulate after warmup.")
     parser.add_argument("--warmup", type=int, default=20, help="Number of frames to simulate before recording.")
-    parser.add_argument("--lidars", type=int, default=14, help="Number of LiDARs to spawn (top and bottom included in this count if bottom is enabled).")
-    parser.add_argument("--lidar-distance", type=float, default=0.6, help="Radius used to position LiDARs around the object.")
+    parser.add_argument("--lidars", type=int, default=12, help="Number of LiDARs to spawn (top and bottom included in this count if bottom is enabled).")
+    parser.add_argument("--lidar-distance", type=float, default=0.6 , help="Radius used to position LiDARs around the object.")
     parser.add_argument("--cameras", type=int, default=0, help="Number of cameras to spawn for visual inspection.")
     parser.add_argument("--camera-distance", type=float, default=0.5, help="Radius used to position cameras around the object.")
     parser.add_argument("--include-bottom", action="store_true", dest="include_bottom", help="Place one LiDAR directly below the object looking up.")
@@ -387,18 +435,40 @@ def parse_args():
 
 def main():
     args = parse_args()
+    tasks = []
 
-    usd_root: Path = args.usd
-    usd_files = gather_usd_files(usd_root, None)
-    if not usd_files:
+    if args.usd:
+        if not args.usd.exists():
+            print(f"[Error] File not found: {args.usd}")
+            simulation_app.close()
+            return
+        tasks.append(args.usd)
+    
+    elif args.root and args.ids:
+        usd_dir = args.root / "usd"
+        for obj_id in args.ids:
+            file_name = f"{obj_id}.usd"
+            usd_path = usd_dir / file_name
+            if usd_path.exists():
+                tasks.append(usd_path)
+            else:
+                print(f"[Warning] USD file not found: {usd_path}")
+
+    if not tasks:
+        print("[Error] No valid tasks found.")
         simulation_app.close()
         return
 
-    # material_props = load_material_properties(Path(args.material_props))
+    print(f"[Main] Found {len(tasks)} tasks to process.")
 
-    for usd_path in usd_files:
-        out_dir = args.output_dir if args.output_dir else usd_path.parent
-        process_usd_file(usd_path, Path(out_dir), args)
+    base_out_dir = args.output_dir if args.output_dir else tasks[0].parent
+
+    for usd_path in tasks:
+        try:
+            process_usd_file(usd_path, base_out_dir, args)
+        except Exception as e:
+            print(f"[Error] Failed processing {usd_path.name}: {e}")
+            continue
 
     simulation_app.close()
 

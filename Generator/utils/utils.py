@@ -14,6 +14,7 @@ def check_valid_quat(quat):
     Returns:
         bool: True if the quaternion is valid, False otherwise.
     """
+    print(quat)
     if len(quat) != 4:
         return False
     norm = sum(q ** 2 for q in quat) ** 0.5
