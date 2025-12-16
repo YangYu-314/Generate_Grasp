@@ -88,6 +88,7 @@ class GraspGenGenerator(nn.Module):
         pose_repr: str = "mlp",
         num_grasps_per_object: int = 20,
         checkpoint_object_encoder_pretrained: str = None,
+        ptv3_in_channels: int = 3,
     ):
         super().__init__()
 
@@ -112,6 +113,7 @@ class GraspGenGenerator(nn.Module):
         self.pose_repr = pose_repr
         self.num_grasps_per_object = num_grasps_per_object
         self.checkpoint_object_encoder_pretrained = checkpoint_object_encoder_pretrained
+        self.ptv3_in_channels = ptv3_in_channels
 
         if self.grasp_repr == "r3_6d":
             self.output_dim = 9
@@ -140,7 +142,7 @@ class GraspGenGenerator(nn.Module):
             )
         elif obs_backbone == "ptv3":
             self.object_encoder = PointTransformerV3(
-                in_channels=3,
+                in_channels=self.ptv3_in_channels,
                 enable_flash=False,
                 cls_mode=True,
             )
@@ -234,6 +236,7 @@ class GraspGenGenerator(nn.Module):
             "pose_repr": cfg.pose_repr,
             "num_grasps_per_object": cfg.num_grasps_per_object,
             "checkpoint_object_encoder_pretrained": cfg.checkpoint_object_encoder_pretrained,
+            "ptv3_in_channels": cfg.ptv3.in_channels,
         }
         return cls(**args)
 
@@ -279,11 +282,13 @@ class GraspGenGenerator(nn.Module):
 
         num_grasps_per_batch = data["grasps"][0].shape[0]
         batch_size = num_objects_in_batch * num_grasps_per_batch
+
         depth = data["points"]
+        C = depth.shape[-1]
         grasps = data["grasps"]
 
         num_points = depth.shape[-2]
-        depth = depth.reshape([-1, num_points, 3])
+        depth = depth.reshape([-1, num_points, C])
 
         grasps_init_size = [num_objects_in_batch, num_grasps_per_batch, 4, 4]
         if type(grasps) == list:
@@ -292,7 +297,8 @@ class GraspGenGenerator(nn.Module):
         grasps = grasps.reshape([-1, 4, 4])
 
         if self.kappa is not None:
-            depth = self.kappa * depth
+            depth = depth.clone()
+            depth[:, :, :3] *= self.kappa
 
         if self.obs_backbone == "ptv3":
             depth = convert_to_ptv3_pc_format(depth, grid_size=self.grid_size)
@@ -430,14 +436,16 @@ class GraspGenGenerator(nn.Module):
         depth = data["points"]
 
         num_points = depth.shape[-2]
+        C = depth.shape[-1]
 
-        depth = depth.reshape([-1, num_points, 3])
+        depth = depth.reshape([-1, num_points, C])
         depth = depth.to(device)
 
         grasps_init_size = [num_objects_in_batch, num_grasps_per_batch, 4, 4]
 
         if self.kappa is not None:
-            depth = self.kappa * depth
+            depth = depth.clone()
+            depth[:, :, :3] *= self.kappa
 
         if self.obs_backbone == "ptv3":
             depth = convert_to_ptv3_pc_format(depth, grid_size=self.grid_size)

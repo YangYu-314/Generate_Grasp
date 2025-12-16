@@ -712,7 +712,7 @@ class SerializedPooling(PointModule):
             point_dict["pooling_inverse"] = cluster
             point_dict["pooling_parent"] = point
         point = Point(point_dict)
-        if self.norm is not None:
+        if self.norm is not None and "feat" in point.keys() and point.feat.size(0) > 1:
             point = self.norm(point)
         if self.act is not None:
             point = self.act(point)

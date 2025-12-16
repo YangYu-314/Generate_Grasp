@@ -21,6 +21,7 @@ from torch.utils.data import ConcatDataset, DataLoader, RandomSampler, Sequentia
 from torch.utils.data.distributed import DistributedSampler
 
 from grasp_gen.dataset.dataset import ObjectPickDataset, collate
+from grasp_gen.dataset.pc_dataset import LidarPickDataset
 from grasp_gen.utils.logging_config import get_logger
 
 logger = get_logger(__name__)
@@ -33,6 +34,26 @@ def worker_init_fn(worker_id):
 def get_data_loader(cfg, data_cfg, split, scenes, use_ddp, training, inference=False):
     DatasetCls = getattr(sys.modules[__name__], data_cfg.dataset_cls)
     kwargs = DatasetCls.from_config(data_cfg)
+
+    if data_cfg.dataset_cls == "LidarPickDataset":
+        dataset = DatasetCls(**kwargs, split=split, scenes=scenes, inference=inference)
+
+        sampler = DistributedSampler(dataset, shuffle=training, drop_last=False) if use_ddp \
+                else (RandomSampler(dataset) if training else SequentialSampler(dataset))
+
+        loader = DataLoader(
+            dataset,
+            cfg.batch_size,
+            sampler=sampler,
+            num_workers=cfg.num_workers,
+            collate_fn=collate,
+            persistent_workers=cfg.num_workers > 0,
+            pin_memory=True,
+            worker_init_fn=worker_init_fn,
+            timeout=300 if use_ddp else 0,
+        )
+        return sampler, loader
+
     if not training:
         kwargs["jitter_scale"] = 0
         kwargs["robot_prob"] = 1

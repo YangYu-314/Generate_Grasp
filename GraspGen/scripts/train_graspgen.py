@@ -20,6 +20,11 @@ from datetime import timedelta
 from functools import partial
 from itertools import chain
 from time import sleep, time
+
+# Ensure repository root (containing the `grasp_gen` package) is on sys.path
+REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+if REPO_ROOT not in sys.path:
+    sys.path.insert(0, REPO_ROOT)
 import hydra
 import numpy as np
 import torch
@@ -451,6 +456,8 @@ def train(rank, cfg):
         f"Training starting at epoch {init_epoch+1} and batch index {batch_idx}"
     )
 
+    epoch_start = time()
+
     for epoch in range(init_epoch, cfg.train.num_epochs):
 
         model.train()
@@ -472,6 +479,17 @@ def train(rank, cfg):
         )
 
         batch_idx = 0  # Reset to 0 after first (and every) epoch
+
+        # Log epoch time on rank 0
+        if rank == 0:
+            epoch_time = time() - epoch_start
+            try:
+                logger.info(
+                    f"Epoch {epoch+1:02d} finished in {timedelta(seconds=epoch_time)}"
+                )
+            except Exception:
+                logger.info(f"Epoch {epoch+1:02d} finished in {epoch_time:.2f} seconds")
+        epoch_start = time()
 
         if (epoch + 1) % cfg.train.save_freq == 0 and rank == 0:
             save_model(epoch + 1, model, optimizer, cfg.train.log_dir, use_ddp)
@@ -504,8 +522,19 @@ def train(rank, cfg):
             pass
 
 
-@hydra.main(config_path=".", config_name="config", version_base="1.3")
+@hydra.main(config_path=".", config_name="lidar_config_xyz", version_base="1.3")
 def main(cfg: DictConfig) -> None:
+
+    # Optionally merge an extra user config YAML passed via environment.
+    # This lets us run multiple experiments by pointing to different YAMLs
+    # without changing the code or base config.
+    extra_cfg_path = os.environ.get("GRASPGEN_EXTRA_CONFIG", "")
+    if extra_cfg_path:
+        logger.info(f"Loading extra config from {extra_cfg_path}")
+        extra_cfg = OmegaConf.load(extra_cfg_path)
+        # Extra YAML overrides the base config, but
+        # command-line overrides (already in cfg) keep precedence.
+        cfg = OmegaConf.merge(extra_cfg, cfg)
 
     # TODO - Unify this later to a single gripper name and variable
     if cfg.train.model_name == "diffusion":

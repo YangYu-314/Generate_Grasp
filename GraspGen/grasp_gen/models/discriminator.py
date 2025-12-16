@@ -63,6 +63,7 @@ class GraspGenDiscriminator(nn.Module):
         checkpoint_object_encoder_pretrained: str = None,
         kappa: float = 3.30,
         gripper_name: str = "franka_panda",
+        ptv3_in_channels: int = 3,
     ):
         super().__init__()
 
@@ -75,6 +76,7 @@ class GraspGenDiscriminator(nn.Module):
         self.checkpoint_object_encoder_pretrained = checkpoint_object_encoder_pretrained
         self.kappa = None if kappa <= 0 else kappa
         self.gripper_name = gripper_name
+        self.ptv3_in_channels = ptv3_in_channels
 
         if self.grasp_repr == "r3_6d":
             self.output_dim = 9
@@ -92,7 +94,7 @@ class GraspGenDiscriminator(nn.Module):
             )
         elif self.obs_backbone == "ptv3":
             self.object_encoder = PointTransformerV3(
-                in_channels=3,
+                in_channels=self.ptv3_in_channels,
                 enable_flash=False,
                 cls_mode=True,
             )
@@ -188,6 +190,7 @@ class GraspGenDiscriminator(nn.Module):
             "checkpoint_object_encoder_pretrained": cfg.checkpoint_object_encoder_pretrained,
             "kappa": cfg.kappa,
             "gripper_name": cfg.gripper_name,
+            "ptv3_in_channels": cfg.ptv3.in_channels,
         }
         return cls(**args)
 
@@ -216,7 +219,8 @@ class GraspGenDiscriminator(nn.Module):
         depth = data["points"]
 
         num_points = depth.shape[-2]
-        depth = depth.reshape([-1, num_points, 3])
+        C = depth.shape[-1]
+        depth = depth.reshape([-1, num_points, C])
 
         if type(grasps) == list:
             grasps = torch.cat(grasps)
@@ -224,7 +228,8 @@ class GraspGenDiscriminator(nn.Module):
         grasps = grasps.reshape([-1, 4, 4])
 
         if self.kappa is not None:
-            depth = self.kappa * depth
+            depth = depth.clone()
+            depth[:, :, :3] *= self.kappa
 
         if self.obs_backbone == "ptv3":
             depth = convert_to_ptv3_pc_format(depth, grid_size=self.grid_size)
@@ -286,8 +291,10 @@ class GraspGenDiscriminator(nn.Module):
 
         if "labels" in data:
             labels = data["labels"]
-            if type(labels) == list:
-                labels = torch.cat(labels)
+            if isinstance(labels, list):
+                labels = torch.cat(labels, dim=0)          # [B*K, 1]
+            else:
+                labels = labels.reshape(-1, 1)             # [B*K, 1]
             bce_loss = F.binary_cross_entropy_with_logits(
                 input=logits, target=labels, reduction="none"
             )

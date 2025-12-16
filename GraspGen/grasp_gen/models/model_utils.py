@@ -17,7 +17,6 @@ import numpy as np
 import torch
 import torch.nn as nn
 
-from grasp_gen.models.pointnet.pointnet2_modules import PointnetSAModule
 from grasp_gen.utils.logging_config import get_logger
 
 logger = get_logger(__name__)
@@ -52,10 +51,11 @@ def convert_to_ptv3_pc_format(point_cloud: torch.Tensor, grid_size: float = 0.01
     device = point_cloud.device
     batch_size = point_cloud.shape[0]
     num_points = point_cloud.shape[1]
+    feature_dim = point_cloud.shape[2]
     data_dict = dict()
-    data_dict["coord"] = point_cloud.reshape([-1, 3]).to(device)
+    data_dict["coord"] = point_cloud[:, :, :3].reshape([-1, 3]).to(device)
     data_dict["grid_size"] = grid_size
-    data_dict["feat"] = point_cloud.reshape([-1, 3]).to(device)
+    data_dict["feat"] = point_cloud.reshape([-1, feature_dim]).to(device)
     data_dict["offset"] = (
         torch.tensor([num_points]).repeat(batch_size).cumsum(dim=0).to(device)
     )
@@ -134,6 +134,7 @@ class PointNetPlusPlus(nn.Module):
     def __init__(
         self, activation="relu", bn=False, output_embedding_dim=512, feature_dim=-1
     ):
+        from grasp_gen.models.pointnet.pointnet2_modules import PointnetSAModule
         mlp = []
         for elem in OBJ_MLPS:
             mlp.append(elem.copy())

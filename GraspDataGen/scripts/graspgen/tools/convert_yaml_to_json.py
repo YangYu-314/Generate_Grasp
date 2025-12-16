@@ -65,7 +65,7 @@ def convert_yaml_to_json(yaml_path, json_path, max_grasps=None, gripper_config_p
     
     # Extract gripper information
     gripper_file = yaml_data['gripper_file']
-    gripper_name = "robotiq_2f_85"  # Extract from gripper file name
+    gripper_name = "onrobot_rg6"  # Extract from gripper file name
     
     # Load gripper config if provided
     gripper_config = {}
@@ -75,8 +75,8 @@ def convert_yaml_to_json(yaml_path, json_path, max_grasps=None, gripper_config_p
             gripper_config = yaml.safe_load(f)
     
     # Extract gripper parameters from config or use defaults
-    width = gripper_config.get('width', 0.08709684014320374)
-    depth = gripper_config.get('depth', 0.12992018461227417)
+    width = gripper_config.get('width', 0.151431)
+    depth = gripper_config.get('depth', 0.166767)
     transform_offset_raw = gripper_config.get('transform_offset_from_asset_to_graspgen_convention', 
                                             [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1])
     

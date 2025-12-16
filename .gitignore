@@ -4,7 +4,7 @@ outputs/
 copy/
 logs/
 test/
-
+GraspGen/runs/
 
 Generator/configs
 GraspDataGen/datagen_sim_data
